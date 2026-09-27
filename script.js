@@ -10,4 +10,17 @@ function getTotal(list) {
     return total;
 }
 
+function getLargest(list) {
+    let largest = list[0];
+
+    for (let number of list) {
+        if (number > largest) {
+            largest = number;
+        }
+    }
+
+    return largest;
+}
+
 console.log(getTotal(numbers));
+console.log(getLargest(numbers));
