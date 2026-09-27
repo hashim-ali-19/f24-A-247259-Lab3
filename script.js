@@ -22,5 +22,18 @@ function getLargest(list) {
     return largest;
 }
 
+function getAboveFirst(list) {
+    let count = 0;
+
+    for (let i = 1; i < list.length; i++) {
+        if (list[i] > list[0]) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
 console.log(getTotal(numbers));
 console.log(getLargest(numbers));
+console.log(getAboveFirst(numbers));
